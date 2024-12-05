@@ -1,0 +1,183 @@
+/* Base styles */
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #A9A9A9;
+}
+
+/* Navigation Grid */
+.nav {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.nav a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  text-align: center;
+  border-radius: 5px;
+  transition: transform 1s ease;
+}
+.nav a:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+.card .para {
+  background: url(Main-img.jpg) center/cover;
+  color: white;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+.card h1 {
+  font-size: 3rem;
+  padding: 100px 0 0 40px;
+  margin: 0;
+}
+.card .text {
+  padding: 20px 40px;
+}
+.card .text button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.subscribe {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+}
+.subscribe .member {
+  background-color: #c2c2c2;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto auto;
+  justify-items: center;
+  align-content: center;
+  text-align: center;
+}
+.subscribe h4 {
+  margin: 0 0 10px 0;
+}
+.subscribe p {
+  font-size: 1.3rem;
+  margin: 10px 0;
+}
+.subscribe button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.cards .boxes {
+  background-color: #c2c2c2;
+  padding: 20px;
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  justify-items: center;
+  text-align: center;
+}
+.cards img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav {
+    grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+  }
+  .card {
+    grid-template-columns: 1fr; /* Stack card items vertically */
+  }
+  h1 {
+    font-size: 2.5rem; /* Reduce font size */
+    padding: 50px 20px 0;
+  }
+  .subscribe {
+    grid-template-rows: repeat(1, 1fr); /* Stack all rows */
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr); /* Reduce to 2 columns */
+  }
+}
+/* For screens smaller than 768px (Large Phones & Small Tablets) */
+@media screen and (max-width: 768px) {
+  body {
+    padding: 10px; /* Reduce padding */
+  }
+  .nav {
+    grid-template-columns: 1fr; /* Single column navigation */
+    gap: 10px; /* Reduce gap */
+  }
+  h1 {
+    font-size: 2rem;
+    padding: 20px;
+  }
+  .card {
+    grid-template-columns: 1fr; /* Stack card items */
+  }
+  .cards {
+    grid-template-columns: repeat(2, 1fr); /* 2 cards per row */
+  }
+  .subscribe {
+    gap: 10px; /* Reduce gap between rows */
+  }
+  .subscribe .member {
+    padding: 10px;
+  }
+}
+/* For screens smaller than 480px (Mobile Phones) */
+@media screen and (max-width: 480px) {
+  .nav {
+    grid-template-columns: 1fr; /* Single column navigation */
+    gap: 5px;
+  }
+  .card {
+    grid-template-columns: 1fr; /* Stack card items */
+  }
+  .text button {
+    padding: 5px 10px; /* Reduce button padding */
+  }
+  h1 {
+    font-size: 1.5rem;
+    padding: 10px;
+  }
+  .subscribe {
+    gap: 5px;
+  }
+  .subscribe .member {
+    padding: 5px;
+  }
+  .subscribe .member h4 {
+    font-size: 1rem; /* Adjust heading size */
+  }
+  .subscribe .member p {
+    font-size: 1rem;
+  }
+  .cards {
+    grid-template-columns: 1fr; /* Single card per row */
+  }
+  .boxes img {
+    width: 40px; /* Reduce image size */
+  }
+}/*# sourceMappingURL=style.css.map */

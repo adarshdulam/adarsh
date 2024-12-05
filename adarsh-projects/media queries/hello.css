@@ -1,0 +1,163 @@
+/* Base Styles */
+body {
+  margin: 0;
+  padding: 20px;
+  background-color: #A9A9A9;
+  font-family: Arial, sans-serif;
+}
+
+.nav {
+  margin-bottom: 30px;
+  text-align: center; /* Center align links */
+}
+
+.nav a {
+  background-color: black;
+  color: white;
+  text-decoration: none;
+  padding: 1.8vh 8vw;
+  display: inline-block; /* Inline-block for horizontal layout */
+  border-radius: 5px;
+  margin: 5px; /* Spacing between links */
+  transition: transform 0.3s ease;
+}
+
+.nav a:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+/* Card Section */
+.card {
+  overflow: hidden; /* Clear floats */
+  margin-bottom: 30px;
+}
+
+.para {
+  float: left; /* Left-align this section */
+  height: 50vh;
+  width: 64%;
+  background: url(Main-img.jpg) center/cover;
+  color: white;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.para h1 {
+  font-size: 2.5rem;
+  margin: 0 0 20px 0;
+}
+
+.text p {
+  margin: 20px 0;
+}
+
+.text button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+.subscribe {
+  float: right; /* Right-align this section */
+  width: 30%;
+  height: 10px;
+  box-sizing: border-box;
+}
+
+.member {
+  background-color: #c2c2c2;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center; /* Center align content */
+}
+
+.member h4 {
+  margin: 0 0 10px 0;
+}
+
+.member p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.member button {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+/* Cards Section */
+.cards {
+  overflow: hidden; /* Clear floats */
+}
+
+.boxes {
+  width: 23%; /* Four boxes side by side */
+  background-color: #c2c2c2;
+  padding: 20px;
+  margin: 10px 1%;
+  box-sizing: border-box;
+  float: left; /* Float boxes to align side-by-side */
+  text-align: center;
+}
+
+.boxes img {
+  width: 50px;
+  margin-bottom: 15px;
+}
+
+/* Media Queries */
+/* For screens smaller than 1024px (Tablets) */
+@media screen and (max-width: 1024px) {
+  .para {
+    width: 100%; /* Full width */
+    float: none; /* Remove float */
+  }
+  .subscribe {
+    width: 100%; /* Full width */
+    float: none; /* Remove float */
+  }
+  .boxes {
+    width: 48%; /* Two boxes per row */
+    margin: 10px 1%;
+  }
+}
+/* For screens smaller than 768px (Large Phones & Small Tablets) */
+@media screen and (max-width: 768px) {
+  .boxes {
+    width: 100%; /* Stack boxes vertically */
+    margin: 10px 0;
+  }
+  .nav a {
+    padding: 10px;
+    margin: 5px 0; /* Stack navigation links vertically */
+    display: block; /* Block display for stacking */
+  }
+  .text button {
+    padding: 8px 16px;
+  }
+}
+/* For screens smaller than 480px (Mobile Phones) */
+@media screen and (max-width: 480px) {
+  .para h1 {
+    font-size: 2rem; /* Adjust font size */
+  }
+  .text p {
+    font-size: 0.9rem; /* Adjust text size */
+  }
+  .member {
+    padding: 10px;
+  }
+  .member p {
+    font-size: 1rem; /* Adjust font size */
+  }
+  .boxes img {
+    width: 40px; /* Smaller icons */
+  }
+}/*# sourceMappingURL=hello.css.map */

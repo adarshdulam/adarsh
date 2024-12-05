@@ -1,0 +1,154 @@
+body {
+  background-color: #A9A9a9;
+  padding: 1.2rem;
+}
+
+.nav {
+  margin-bottom: 3vh;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.nav a {
+  flex: 1 1 auto;
+  text-decoration: none;
+  text-align: center;
+  padding: 0.5rem 0.8rem;
+  background-color: black;
+  color: white;
+  transition: transform 1s ease;
+}
+.nav a:hover {
+  background-color: white;
+  color: black;
+  transform: scale(1.1);
+}
+
+.card {
+  display: flex;
+  gap: 1.3rem;
+  margin-bottom: 1.3rem;
+  flex-wrap: wrap;
+}
+.card .para {
+  background: url(Main-img.jpg) center/cover;
+  color: white;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-left: 4rem;
+  margin-top: 100px;
+}
+
+.text {
+  margin: 2.2rem;
+  margin-bottom: 1.2rem;
+}
+.text button {
+  padding: 5px 5px;
+  background-color: black;
+  color: white;
+  border: none;
+}
+
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.subscribe .member {
+  height: 150px;
+  width: 200px;
+  padding: 10px;
+  background-color: #c2c2c2;
+  text-align: center;
+}
+.subscribe .member p {
+  font-size: 1.3rem;
+}
+.subscribe .member button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.cards {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+.cards .boxes {
+  flex: 1 1;
+  background-color: #c2c2c2;
+  text-align: center;
+}
+.cards .boxes img {
+  width: 50px;
+  margin-top: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    margin-left: 2rem;
+    margin-top: 50px;
+  }
+  .nav a {
+    padding: 0.5vw 6vw; /* Adjust link padding */
+  }
+  .card {
+    flex-direction: column; /* Stack cards vertically */
+  }
+  .subscribe .member {
+    height: 120px;
+    width: 180px; /* Reduce size for smaller screens */
+  }
+  .subscribe {
+    flex-direction: row;
+    width: 100%;
+  }
+  .cards .boxes {
+    width: 80%; /* Make boxes occupy full width */
+    margin: 10px auto; /* Center align on smaller screens */
+  }
+}
+/* For screens smaller than 480px (Mobile devices) */
+@media screen and (max-width: 480px) {
+  body {
+    padding: 0.5rem;
+  }
+  .nav {
+    flex-direction: column; /* Stack navigation links vertically */
+    align-items: center;
+  }
+  .nav a {
+    width: 80%;
+    padding: 0.4rem 1.5rem; /* Further reduce padding */
+    font-size: 0.9rem; /* Reduce font size */
+  }
+  .card {
+    flex-direction: column; /* Stack all cards vertically */
+  }
+  .subscribe .member {
+    height: auto;
+    width: 100%; /* Make members take full width */
+    padding: 10px;
+  }
+  .cards {
+    flex-direction: column; /* Stack all boxes vertically */
+  }
+  .cards .boxes {
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  h1 {
+    font-size: 1.8rem; /* Reduce heading size */
+    text-align: center;
+    margin: 1rem 0;
+  }
+  .text button {
+    padding: 0.5rem 1rem;
+  }
+}/*# sourceMappingURL=task.css.map */

@@ -1,0 +1,36 @@
+
+.circle{
+   height:100px;
+    width: 100px;
+    border-radius: 50%;
+    background-color: green;
+    margin-left: 80px;
+}
+.triangel{
+    height: 0px;
+    width: 0px;
+    margin-left: 30px;
+    border-top: 50px solid transparent;
+    border-right: 55px solid transparent;
+    border-left: 55px solid transparent;
+    border-bottom: 110px solid rgb(0, 255, 136);
+}
+
+.star{
+    width: 20vw;
+      height: 20vw;
+      background-color: green;
+      clip-path: polygon(
+      50% 0%,    /* top point */
+      61% 35%,   /* top right inner */
+      98% 35%,   /* right outer */
+      68% 57%,   /* bottom right inner */
+      79% 91%,   /* bottom right outer */
+      50% 70%,   /* bottom middle inner */
+      21% 91%,   /* bottom left outer */
+      32% 57%,   /* bottom left inner */
+      2% 35%,    /* left outer */
+      39% 35%    /* top left inner */
+      );  
+}
+
